@@ -24,6 +24,15 @@ pipeline {
              #   ls -la
                 '''
             }
+
         }
+        stage('Test'){
+            steps{
+                sh '''
+                test -f build  
+                '''
+          }
+        }
+
     }
 }
