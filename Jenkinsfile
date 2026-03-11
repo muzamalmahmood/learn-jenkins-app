@@ -15,8 +15,9 @@ pipeline {
                 ls -la
                 node --version
                 npm --version
-                npm ci --verbose
-                npm run build
+                
+                ## npm ci --verbose
+                ## npm run build
                 ls -la
                 '''
             }
