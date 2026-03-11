@@ -32,7 +32,7 @@ pipeline {
 
     post {
         always {
-            junit ' test-results/junit.cml '
+            junit 'test-results/junit.xml'
         }
     }
 }
