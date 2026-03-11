@@ -18,6 +18,7 @@ pipeline {
                 
                 ## npm ci --verbose
                 ## npm run build
+                pwd
                 ls -la
                 '''
             }
