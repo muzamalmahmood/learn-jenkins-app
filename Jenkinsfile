@@ -30,6 +30,7 @@ pipeline {
             steps{
                 sh '''
                 find build  
+                npm test
                 '''
           }
         }
