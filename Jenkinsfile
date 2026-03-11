@@ -11,8 +11,9 @@ pipeline {
             }
             steps {
                 sh '''
-                ls
-                ls -la
+               
+               # ls
+              #  ls -la
                 node --version
                 npm --version
                 
@@ -20,7 +21,7 @@ pipeline {
                 npm run build
                 
                 pwd
-                ls -la
+             #   ls -la
                 '''
             }
         }
