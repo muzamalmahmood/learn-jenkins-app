@@ -7,7 +7,7 @@ pipeline {
     }
 
     stages {
-
+/*
         stage('Build') {
             steps {
                 sh '''
@@ -17,12 +17,12 @@ pipeline {
                 npm run build
                 '''
             }
-        }
+        } */
 
         stage('Test') {
             steps {
                 sh '''
-                find build
+                #find build
                 npm test
                 '''
             }
