@@ -24,12 +24,10 @@ pipeline {
                     ls -la
                     node --version
                     npm --version
-
-                    ping registry.npmjs.org
-                    curl https://registry.npmjs.org
+                    cat /etc/resolv.conf
                    # npm ci --verbose
-                    npm run build
-                    ls -la
+                  #  npm run build
+                   # ls -la
                 '''
             }
         }
