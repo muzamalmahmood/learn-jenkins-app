@@ -25,9 +25,9 @@ pipeline {
                     node --version
                     npm --version
                     cat /etc/resolv.conf
-                    npm ci --verbose
-                  #  npm run build
-                   # ls -la
+                    #npm ci --verbose
+                     npm run build
+                    ls -la
                 '''
             }
         }
