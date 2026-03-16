@@ -25,13 +25,13 @@ pipeline {
                     node --version
                     npm --version
                     cat /etc/resolv.conf
-                   # npm ci --verbose
+                    npm ci --verbose
                   #  npm run build
                    # ls -la
                 '''
             }
         }
-/*
+
         stage('Test') {
             parallel {
 
@@ -90,7 +90,7 @@ pipeline {
 
             }
         }
-*/ /*
+
         stage('Deploy') {
             agent {
                 docker {
@@ -111,8 +111,7 @@ pipeline {
                 '''
             }
         }
-        */
-        /*
+       
     stage(' Prod E2E Test') {
             agent {
                 docker {
@@ -142,7 +141,7 @@ pipeline {
                     ])
                 }
             }
-        }*/
+        }
 
     }
 }
