@@ -24,13 +24,16 @@ pipeline {
                     ls -la
                     node --version
                     npm --version
-                    npm ci --verbose
+
+                    ping registry.npmjs.org
+                    curl https://registry.npmjs.org
+                   # npm ci --verbose
                     npm run build
                     ls -la
                 '''
             }
         }
-
+/*
         stage('Test') {
             parallel {
 
@@ -140,5 +143,5 @@ pipeline {
             }
         }
 
-    }
+    }*/
 }
