@@ -99,6 +99,15 @@ pipeline {
                 '''
             }
         }
+        stage('Apruval') {
+            
+            steps {
+                timeout(1){
+                    input message: 'Ready to deploy', ok: 'Yes i a, sure i want to deploy'
+                }
+               
+            }
+        }
              stage('Deploy pro') {
             agent {
                 docker {
